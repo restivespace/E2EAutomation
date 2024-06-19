@@ -23,3 +23,31 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// In cypress/support/commands.js
+
+Cypress.Commands.add('highlight', { prevSubject: 'element' }, (subject, options = {}) => {
+    const { duration = 500, highlightStyles = {} } = options;
+    const $el = subject;
+  
+    const originalStyles = {
+      backgroundColor: $el.css('background-color'),
+      color: $el.css('color'),
+      fontWeight: $el.css('font-weight'),
+      border: $el.css('border'),
+      padding: $el.css('padding')
+    };
+  
+    $el.css({
+      'background-color': highlightStyles.backgroundColor || 'yellow',
+    //   'color': highlightStyles.color || 'red',
+    //   'font-weight': highlightStyles.fontWeight || 'bold',
+    //   'border': highlightStyles.border || '2px solid red',
+    //   'padding': highlightStyles.padding || '2px'
+    });
+  
+    cy.wait(duration).then(() => {
+      $el.css(originalStyles);
+    });
+  });
+  
