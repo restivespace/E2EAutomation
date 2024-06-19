@@ -32,10 +32,10 @@ Cypress.Commands.add('highlight', { prevSubject: 'element' }, (subject, options 
   
     const originalStyles = {
       backgroundColor: $el.css('background-color'),
-      color: $el.css('color'),
-      fontWeight: $el.css('font-weight'),
-      border: $el.css('border'),
-      padding: $el.css('padding')
+    //   color: $el.css('color'),
+    //   fontWeight: $el.css('font-weight'),
+    //   border: $el.css('border'),
+    //   padding: $el.css('padding')
     };
   
     $el.css({
