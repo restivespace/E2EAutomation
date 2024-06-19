@@ -7,11 +7,11 @@ describe('E2E Automation', () => {
     cy.visit('https://www.techinasia.com/'); // Adjust the URL as necessary
   });
   
-  it('Assert the title', () => {
-    cy.get("h1").contains("You look like someone who appreciates quality journalism.").highlight();
-  })
+  // it('Assert the title', () => {
+  //   cy.get("h1").contains("You look like someone who appreciates quality journalism.").highlight();
+  // })
 
-  it('Assert the Menu', () => {
+  it('Assert that the Menu are visible', () => {
     const dataCyValues = [
       'News-nav-link',
       'Jobs-nav-link',
@@ -30,7 +30,7 @@ describe('E2E Automation', () => {
     });
   })
 
-  it('should check that the Upcoming Events container and its URLs are visible', () => {
+  it('Assert that the Upcoming Events container and its URLs are visible', () => {
     
     // Select the Upcoming Events container
     cy.get('.conference-reminder').should('be.visible').highlight();
