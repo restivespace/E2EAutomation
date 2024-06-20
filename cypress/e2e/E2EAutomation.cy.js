@@ -46,7 +46,7 @@ describe('E2E Automation', () => {
     });
   });
 
-  it('should check that the Latest Stories header and at least 5 post items are visible', () => {
+  it('Assert that the Latest Stories header and at least 5 post items are visible', () => {
     // Assert the visibility of the Latest Stories header element
     cy.get('.jsx-4016345616.header').should('be.visible').highlight();
 
@@ -59,7 +59,7 @@ describe('E2E Automation', () => {
     });
   });
 
-  it('should check that Premium Content is visible and has at least 3 list items', () => {
+  it('Assert that Premium Content is visible and has at least 3 list items', () => {
     // Assert the visibility of the Premium Content section
     cy.get('.jsx-3337749519.container.vertical').should('be.visible').highlight();
 
@@ -72,20 +72,20 @@ describe('E2E Automation', () => {
     });
   });
 
-  it('should check that Latest Jobs is visible and has at least one job item', () => {
+  it('Assert that Latest Jobs is visible and has at least one job item', () => {
     // Assert the visibility of the Latest Jobs section
-    cy.get('[data-cy="latest-jobs"]').scrollIntoView().should('be.visible');
+    cy.get('[data-cy="latest-jobs"]').scrollIntoView().should('be.visible').highlight();
 
     // Count the number of job items and assert that there is at least one
     cy.get('[data-cy="latest-jobs"] .jsx-2773311516.container').should('have.length.at.least', 1);
 
     // Scroll each job item into view before asserting visibility
     cy.get('[data-cy="latest-jobs"] .jsx-2773311516.container').each(($el) => {
-      cy.wrap($el).scrollIntoView().should('be.visible');
+      cy.wrap($el).scrollIntoView().should('be.visible').highlight();
     });
   });
 
-  it('should navigate to the login page when clicking on the Log In link and fill in login credentials', () => {
+  it('Navigate to the login page when clicking on the Log In link and fill in login credentials', () => {
     // Click on the Log In link
     cy.get('[data-cy="login-link"]').click();
 
