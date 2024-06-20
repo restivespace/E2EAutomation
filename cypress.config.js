@@ -16,6 +16,10 @@ module.exports = defineConfig({
       saveAllAttempts: false,
     },
     screenshotOnRunFailure: true,
-    video: true,
+    // video: true,
   },
+  env: {
+    loginEmail: '',
+    loginPassword: ''
+  }
 });

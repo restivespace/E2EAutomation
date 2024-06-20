@@ -1,6 +1,6 @@
 describe('E2E Automation', () => {
-  const loginEmail = 'restivespace+test@gmail.com';
-  const loginPassword = 'test123';
+  const loginEmail = Cypress.env('loginEmail');
+  const loginPassword = Cypress.env('loginPassword');
   // This will run before each test case
   beforeEach(() => {
     // Navigate to homepage
