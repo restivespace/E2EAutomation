@@ -1,6 +1,6 @@
-# Cypress API Testing Project
+# Cypress E2E Automation Testing Project
 
-This project contains automated API tests using Cypress.
+This project contains automated E2E tests using Cypress.
 
 ## Prerequisites
 
