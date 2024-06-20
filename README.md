@@ -5,7 +5,7 @@ This project contains automated E2E tests using Cypress.
 ## Prerequisites
 
 1. **Visual Studio Code**: Ensure you have Visual Studio Code installed. You can download it from [here](https://code.visualstudio.com/).
-2. **Node.js**: Make sure Node.js is installed on your system. Download it from [here](https://nodejs.org/).
+
 
 ## Steps to Run Cypress Tests
 
