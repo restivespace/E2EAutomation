@@ -1,7 +1,3 @@
-Sure, here's an enhanced version of the README content based on the provided steps:
-
----
-
 # Cypress API Testing Project
 
 This project contains automated API tests using Cypress.
