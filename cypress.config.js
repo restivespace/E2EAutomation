@@ -10,7 +10,7 @@ module.exports = defineConfig({
     reporterOptions: {
       reportDir: 'cypress/reports',
       charts: true,
-      reportPageTitle: 'My Test Suite',
+      reportPageTitle: 'E2E Suite',
       embeddedScreenshots: true,
       inlineAssets: true,
       saveAllAttempts: false,
