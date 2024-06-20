@@ -55,7 +55,7 @@ This will run all the Cypress tests defined in the project.
 
 ## Additional Information
 
-- **Cypress Configuration**: Cypress configuration options can be found and modified in the `cypress.config.js` file.
+- **Cypress Configuration**: Cypress configuration options can be found and modified in the `cypress.config.js` file (credential).
 - **Test Files**: Test files are located in the `cypress/integration/` directory.
 - **Custom Commands**: Custom Cypress commands are located in the `cypress/support/commands.js` file.
 
